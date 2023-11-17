@@ -1,0 +1,43 @@
+.carousel-container {
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #000;
+}
+
+.carousel-images {
+    display: flex;
+    animation: slide 10s infinite;
+    /* 使用slide动画，6秒一次，无限循环 */
+}
+
+.carousel-image {
+    width: 100%;
+}
+
+
+/* 定义keyframes动画 */
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    45% {
+        /* transform: translateX(-100%); */
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    70% {
+        /* transform: translateX(-200%); */
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
